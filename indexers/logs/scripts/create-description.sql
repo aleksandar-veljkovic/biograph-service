@@ -1,0 +1,1 @@
+INSERT INTO EntityDescriptions(entry_id, entity_id, description_text) VALUES (?, ?, ?);

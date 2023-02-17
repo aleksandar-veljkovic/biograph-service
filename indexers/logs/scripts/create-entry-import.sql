@@ -1,0 +1,1 @@
+INSERT INTO EntriesImports (import_id, batch_id, entry_id) VALUES (?, ?, ?);

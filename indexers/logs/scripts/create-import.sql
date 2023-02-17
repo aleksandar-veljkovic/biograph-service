@@ -1,0 +1,1 @@
+INSERT INTO Imports (id, importer, importer_version, import_date, datasource) VALUES (?, ?, ?, ?, ?);

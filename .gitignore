@@ -1,0 +1,5 @@
+node_modules
+indexers/logs/logs.db
+importers/local-data
+*.db
+*/**/*.db

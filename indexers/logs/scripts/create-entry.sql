@@ -1,0 +1,1 @@
+INSERT INTO Entries (id, entry_type, primary_id, is_edge) VALUES (?, ?, ?, ?);

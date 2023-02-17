@@ -1,0 +1,1 @@
+INSERT INTO Identifiers (entry_id, identifier_type, value, is_primary) VALUES (?, ?, ?, ?);

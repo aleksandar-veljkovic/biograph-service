@@ -1,0 +1,1 @@
+INSERT INTO EntityIdentifiers (entry_id, entity_id) VALUES (?, ?);
