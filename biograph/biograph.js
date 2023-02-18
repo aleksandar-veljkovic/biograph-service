@@ -149,6 +149,9 @@ class BioGraph {
     }
 
     async createIdentifierNode(entityId, identifierType, identifierTitle, identifierValue, isPrimary=false) {
+        if (identifierValue == null) {
+            return;
+        }
         const { id: importId } = this.currentImport;
         const identifierNode = new IdentifierNode(identifierType, identifierTitle, identifierValue);
         const hasIdEdge = new HasIdEdge(entityId, identifierNode.getKey());

@@ -76,9 +76,9 @@ class IEDBImporter {
                 const moleculeOrganismEntityId = await bg.createEntityNode('Organism', `${moleculeOrganismId}`);
                 await bg.createEntityEdge(nonPeptidicMoleculeEntityId, moleculeOrganismEntityId, 'FROM');
 
-                await bg.createIdentifierNode(organismEntityId, 'id', `Taxon ID`, `${parentOrganismIri.split('NCBITaxon_')[1]}`);
-                await bg.createIdentifierNode(organismEntityId, 'url', `Taxon URL`, `${parentOrganismIri}`);
-                await bg.createIdentifierNode(organismEntityId, 'name', `Taxon Name`, `${parentOrganism}`);
+                await bg.createIdentifierNode(moleculeOrganismEntityId, 'id', `Taxon ID`, `${parentOrganismIri.split('NCBITaxon_')[1]}`);
+                await bg.createIdentifierNode(moleculeOrganismEntityId, 'url', `Taxon URL`, `${parentOrganismIri}`);
+                await bg.createIdentifierNode(moleculeOrganismEntityId, 'name', `Taxon Name`, `${parentOrganism}`);
             }
             
 

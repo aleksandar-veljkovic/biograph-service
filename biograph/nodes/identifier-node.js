@@ -8,7 +8,7 @@ class IdentifierNode extends BioGraphNode{
             title: identifierTitle, 
             type: identifierType,
             value: `${identifierValue}`,
-            valueHash: utils.sha3(identifierValue),
+            valueHash: utils.sha3(`${identifierValue}`),
         };
 
         super('Identifier', [identifierType, identifierTitle, identifierValue], data);
